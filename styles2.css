@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 800px;
+}
+
+h1, h2 {
+    margin: 0;
+    color: #333;
+}
+
+.toolbox, .form-builder {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fafafa;
+}
+
+.toolbox h2, .form-builder h2 {
+    margin-bottom: 10px;
+}
+
+.tool {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #e1e4e8;
+    cursor: grab;
+}
+
+.tool:active {
+    cursor: grabbing;
+    background: #d1d4d8;
+}
+
+.form-area {
+    min-height: 200px;
+    border: 1px dashed #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.form-element {
+    margin: 10px 0;
+}
+
+input[type="text"], input[type="date"], input[type="email"], button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #6a11cb;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2575fc;
+}

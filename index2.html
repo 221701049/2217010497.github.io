@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Form Builder</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Builder</h1>
+        <div class="toolbox">
+            <h2>Toolbox</h2>
+            <div class="tool" draggable="true" data-type="text">Text Input</div>
+            <div class="tool" draggable="true" data-type="date">Date Picker</div>
+            <div class="tool" draggable="true" data-type="email">Email Input</div>
+            <div class="tool" draggable="true" data-type="submit">Submit Button</div>
+        </div>
+        <div class="form-builder">
+            <h2>Your Form</h2>
+            <form id="formArea" class="form-area">
+                <!-- Form elements will be dropped here -->
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
